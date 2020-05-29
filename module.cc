@@ -1,4 +1,5 @@
 #include <iostream>
+#include <thread>
 
 using namespace std;
 
@@ -7,6 +8,7 @@ void myMethod() {
 }
 
 int main() {
-    myMethod();
+    thread* t1 = new thread(myMethod);
+    t1++;
     return 0;
 }
